@@ -23,12 +23,11 @@ requirements:
   run:
     - cdflib
     - h5netcdf
-    - heliopy
     - numpy
     - pandas
     - python >=3.6
     - requests
-    - sunpy
+    - astropy
 
 test:
   imports:
