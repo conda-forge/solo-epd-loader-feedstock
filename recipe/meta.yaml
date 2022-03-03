@@ -22,7 +22,6 @@ requirements:
     - setuptools-scm
   run:
     - cdflib
-    - datetime
     - h5netcdf
     - numpy
     - pandas
