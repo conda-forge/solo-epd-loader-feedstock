@@ -11,7 +11,7 @@ source:
   sha256: 5ee1a66c2e4738892a0f7cf64dd5d2b5fa856e1738ff6ff61b9b49ff5a719fb0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -28,6 +28,7 @@ requirements:
     - python >=3.6
     - requests
     - astropy
+    - tqdm
 
 test:
   imports:
