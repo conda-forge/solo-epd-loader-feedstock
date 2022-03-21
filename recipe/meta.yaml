@@ -11,7 +11,7 @@ source:
   sha256: 5ee1a66c2e4738892a0f7cf64dd5d2b5fa856e1738ff6ff61b9b49ff5a719fb0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,14 +21,18 @@ requirements:
     - python >=3.6
     - setuptools-scm
   run:
+    - astropy  
     - cdflib
     - h5netcdf
+    - matplotlib
     - numpy
     - pandas
     - python >=3.6
     - requests
-    - astropy
+    - sunpy
     - tqdm
+    - pip:
+      - heliopy==0.15.4
 
 test:
   imports:
