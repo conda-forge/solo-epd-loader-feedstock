@@ -24,7 +24,7 @@ requirements:
     - astropy
     - cdflib
     - h5netcdf
-    - matplotlib
+    - matplotlib-base
     - numpy
     - pandas
     - python >=3.6
