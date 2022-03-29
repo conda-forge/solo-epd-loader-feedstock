@@ -11,7 +11,7 @@ source:
   sha256: 5ee1a66c2e4738892a0f7cf64dd5d2b5fa856e1738ff6ff61b9b49ff5a719fb0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,13 +21,15 @@ requirements:
     - python >=3.6
     - setuptools-scm
   run:
+    - astropy
     - cdflib
     - h5netcdf
+    - matplotlib-base
     - numpy
     - pandas
     - python >=3.6
     - requests
-    - astropy
+    - sunpy
     - tqdm
 
 test:
@@ -40,6 +42,8 @@ test:
 about:
   home: https://github.com/jgieseler/solo-epd-loader
   summary: Data loader for Solar Orbiter/EPD energetic charged particle sensors EPT, HET, and STEP.
+  description: |
+    Data loader for Solar Orbiter/EPD energetic charged particle sensors EPT, HET, and STEP.
   license: BSD-3-Clause
   license_file:
     - licenses/LICENSE.rst
