@@ -23,13 +23,10 @@ requirements:
   run:
     - astropy
     - cdflib
-    - h5netcdf
-    - matplotlib-base
     - numpy
     - pandas
     - python >=3.6
-    - requests
-    - sunpy
+    - sunpy >=3.1.3
     - tqdm
 
 test:
