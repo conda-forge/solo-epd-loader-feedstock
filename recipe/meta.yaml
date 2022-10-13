@@ -21,7 +21,9 @@ requirements:
     - setuptools-scm
   run:
     - astropy
+    - bs4
     - cdflib
+    - datetime
     - numpy
     - pandas
     - python >=3.6
