@@ -32,8 +32,6 @@ test:
   imports:
     - solo_epd_loader
     - solo_epd_loader.tests
-  commands:
-    - pip check
   requires:
     - pip
 
