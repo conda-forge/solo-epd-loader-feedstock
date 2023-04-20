@@ -1,11 +1,11 @@
-About solo-epd-loader
-=====================
+About solo-epd-loader-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/solo-epd-loader-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jgieseler/solo-epd-loader
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/solo-epd-loader-feedstock/blob/main/LICENSE.txt)
 
 Summary: Data loader for Solar Orbiter/EPD energetic charged particle sensors EPT, HET, and STEP.
 
