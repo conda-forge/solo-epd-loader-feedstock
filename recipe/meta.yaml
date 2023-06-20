@@ -1,5 +1,5 @@
 {% set name = "solo-epd-loader" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solo_epd_loader-{{ version }}.tar.gz
-  sha256: 72a18320cfbaf2cdff2b7911e87d9a8e24f4b76a73ed473f185c88cb2c712822
+  sha256: b8cc77ee0e4a89dc35752754b470dc7bdb151e6b2f80ff52c6aa2187dd0e036e
 
 build:
   number: 0
