@@ -1,12 +1,13 @@
 {% set name = "solo-epd-loader" %}
 {% set version = "0.3.7" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solo_epd_loader-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/solo_epd_loader-{{ version }}.tar.gz
   sha256: 85e61956ee06a3e5a4e4e12b79314b5056eabdb89302688c2668c918254c5a06
 
 build:
@@ -17,14 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools-scm
   run:
     - astropy-base
     - cdflib
     - numpy
     - pandas
-    - python >=3.6
+    - python >={{ python_min }}
     - sunpy >=3.1.3
     - tqdm
 
@@ -36,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/jgieseler/solo-epd-loader
