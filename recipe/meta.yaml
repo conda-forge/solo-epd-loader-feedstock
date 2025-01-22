@@ -1,6 +1,6 @@
 {% set name = "solo-epd-loader" %}
 {% set version = "0.3.7" %}
-{% set python_min = "3.6" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
