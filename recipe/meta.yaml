@@ -1,5 +1,5 @@
 {% set name = "solo-epd-loader" %}
-{% set version = "0.3.7" %}
+{% set version = "0.4.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/solo_epd_loader-{{ version }}.tar.gz
-  sha256: 85e61956ee06a3e5a4e4e12b79314b5056eabdb89302688c2668c918254c5a06
+  sha256: 3447e030bc017e430aff46bc8c9d1b47577710c3166791e467d2d61fbc413201
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,6 +20,7 @@ requirements:
     - pip
     - python {{ python_min }}
     - setuptools-scm
+    - setuptools
   run:
     - astropy-base
     - cdflib
